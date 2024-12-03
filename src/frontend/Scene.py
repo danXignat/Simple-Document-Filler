@@ -2,7 +2,7 @@ from pydoc import text
 from tkinter import font
 import customtkinter as ctk
 from config import COLORS
-from typing import Optional, Callable
+from typing import List, Optional, Callable
 
 class Scene(ctk.CTkFrame):
     def __init__(self, parent, controller):
@@ -12,14 +12,19 @@ class Scene(ctk.CTkFrame):
 
         self.text_font = ctk.CTkFont(size=14, weight="bold")
         
-    def create_combo_box(self, label: str, values, side: Optional[str] = "top", pady: int = 5, padx: int = 5):
+    def create_combo_box(self, label: str, values : List, side: Optional[str] = "top", pady: int = 5, padx: int = 5, command : Callable = None):
+        state = "disabled" if len(values) == 0 else "normal"
+        
         combo_box = ctk.CTkComboBox(
             self,
             values=values,
             fg_color=COLORS["blue"],
             button_hover_color=COLORS["dark_blue"],
             dropdown_hover_color=COLORS["dark_green"],
-            font = self.text_font
+            font = self.text_font,
+            width=300,
+            command=command,
+            state = state
         )
         combo_box.set(label)
         combo_box.pack(side=side, pady=pady, padx=padx)
@@ -47,7 +52,8 @@ class Scene(ctk.CTkFrame):
             placeholder_text=label,
             border_color=COLORS["blue"],
             placeholder_text_color=COLORS["light_blue"],
-            font = self.text_font
+            font = self.text_font,
+            width=300
         )
         entry.pack(side=side, pady=pady, padx=padx)
         
