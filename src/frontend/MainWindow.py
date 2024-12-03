@@ -1,3 +1,4 @@
+from sys import implementation
 from tkinter import (
     Tk, Label, Entry, Button, filedialog,
     IntVar, messagebox, Frame, Canvas, Scrollbar, PhotoImage
@@ -9,11 +10,17 @@ from backend import word
 
 class MainWindow:
     labels = [
-            "Nume", "Data",
-            "Judet", "NrStrada",
-            "CNP", "SeriaCi",
-            "NrCi", "Strada", "CodPostal",
-            "NumarTelefon", "Email"
+            "Nume", "CNP", "Data",
+            "Judet", "Localitate", "Sector",
+            "Bloc", "Scara", "Etaj", "Apartament",
+            "Strada", "NrStrada", "CodPostal",
+            "NrTelefon", "Email", 
+            "SeriaCi", "NrCi"
+    ]
+    
+    implementation_labels = [
+        "Judet", "Localitate", "Sector",
+        "Strada", "NrStrada",
     ]
     
     root = Tk()

@@ -1,7 +1,11 @@
-from frontend.MainWindow import MainWindow
+import customtkinter as ctk
+from frontend.App import App
+    
+ctk.set_appearance_mode("System")
+ctk.set_default_color_theme("blue")
 
 if __name__ == "__main__":
-    window = MainWindow()
+    app = App()
     
-    window.run()
+    app.mainloop()
 
