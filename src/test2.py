@@ -1,54 +1,52 @@
 import customtkinter as ctk
-import tkinter as tk
-
-class ScrollableComboBox(ctk.CTkFrame):
-    def __init__(self, master, values, **kwargs):
-        super().__init__(master, **kwargs)
-        
-        # Create a CTkEntry for typing and a scrollbar
-        self.entry = ctk.CTkEntry(self, placeholder_text="Search...")
-        self.entry.pack(fill="both", padx=5, pady=5)
-
-        self.canvas = tk.Canvas(self)
-        self.canvas.pack(fill="both", padx=5, pady=5, expand=True)
-
-        self.scrollbar = tk.Scrollbar(self.canvas, orient="vertical", command=self.canvas.yview)
-        self.scrollbar.pack(side="right", fill="y")
-        self.canvas.config(yscrollcommand=self.scrollbar.set)
-
-        self.frame = ctk.CTkFrame(self.canvas)
-        self.canvas.create_window((0, 0), window=self.frame, anchor="nw")
-
-        self.values = values
-        self.buttons = []
-        self.create_buttons()
-
-        self.frame.bind("<Configure>", lambda e: self.canvas.config(scrollregion=self.canvas.bbox("all")))
-
-    def create_buttons(self):
-        """Creates buttons for each option"""
-        for option in self.values:
-            button = ctk.CTkButton(self.frame, text=option, width=200, command=lambda opt=option: self.select_option(opt))
-            button.pack(pady=5)
-            self.buttons.append(button)
-
-    def select_option(self, option):
-        """Handles selecting an option"""
-        self.entry.set(option)
 
 # Initialize CustomTkinter
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
 
-# Create main window
-root = ctk.CTk()
-root.geometry("300x300")
+class App(ctk.CTk):
+    def __init__(self):
+        super().__init__()
+        
+        self.title("Dynamic Summary Example")
+        self.geometry("500x400")
 
-# Create a list of options
-options = [f"Option {i}" for i in range(1, 51)]  # 50 options
+        # Step 1: Define StringVars to store data
+        self.name_var = ctk.StringVar()
+        self.email_var = ctk.StringVar()
+        self.phone_var = ctk.StringVar()
 
-# Create and pack the ScrollableComboBox
-scrollable_combobox = ScrollableComboBox(root, values=options)
-scrollable_combobox.pack(pady=20, fill="both", expand=True)
+        # Step 2: Create the form entries
+        self.create_form()
+        
+        # Step 3: Create the summary page
+        self.create_summary()
 
-root.mainloop()
+    def create_form(self):
+        """Create input form with Entry widgets."""
+        name_entry = ctk.CTkEntry(self, placeholder_text="Salut")
+        
+        name_entry.grid(row=0, column=1, padx=10, pady=10)
+
+        email_entry = ctk.CTkEntry(self, textvariable=self.email_var)
+        email_entry.grid(row=1, column=1, padx=10, pady=10)
+
+        phone_entry = ctk.CTkEntry(self, textvariable=self.phone_var)
+        phone_entry.grid(row=2, column=1, padx=10, pady=10)
+
+    def create_summary(self):
+        """Create the dynamic summary page."""
+        ctk.CTkLabel(self, text="Summary:", font=ctk.CTkFont(size=20, weight="bold")).grid(row=3, column=0, pady=20, columnspan=2)
+
+        self.summary_name_label = ctk.CTkLabel(self, textvariable=self.name_var)
+        self.summary_name_label.grid(row=4, column=0, columnspan=2, padx=10, pady=5)
+
+        self.summary_email_label = ctk.CTkLabel(self, textvariable=self.email_var)
+        self.summary_email_label.grid(row=5, column=0, columnspan=2, padx=10, pady=5)
+
+        self.summary_phone_label = ctk.CTkLabel(self, textvariable=self.phone_var)
+        self.summary_phone_label.grid(row=6, column=0, columnspan=2, padx=10, pady=5)
+
+if __name__ == "__main__":
+    app = App()
+    app.mainloop()

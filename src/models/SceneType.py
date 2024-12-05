@@ -1,7 +1,11 @@
 from enum import Enum, auto
+from frontend import *
 
 class SceneType(Enum):
-    MainMenu = auto()
-    PersonalData = auto()
-    TargetPlace = auto()
-    
+    MainMenu: str = "Meniu principal"
+    PersonalData: str = "Date personale"
+    TargetPlace: str = "Date implementare"
+    PanelSelection: str = "Date panouri"
+    InvertorSelection: str = "Date invertor"
+    SmartMeterSelection: str = "Date Smart Meter"
+    Summary: str = "Rezumat"

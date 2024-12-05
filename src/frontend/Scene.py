@@ -2,18 +2,20 @@ from pydoc import text
 from tkinter import font
 import customtkinter as ctk
 from config import COLORS
-from typing import List, Optional, Callable
+from typing import List, Optional, Callable, Dict
 
 class Scene(ctk.CTkFrame):
-    def __init__(self, parent, controller):
+    def __init__(self, parent, controller, data_container : Dict):
         super().__init__(parent, border_color=COLORS["green"], border_width=2)
         self.controller = controller
-        self.entries = {}
+        self.entries = data_container
 
         self.text_font = ctk.CTkFont(size=14, weight="bold")
         
     def create_combo_box(self, label: str, values : List, side: Optional[str] = "top", pady: int = 5, padx: int = 5, command : Callable = None):
         state = "disabled" if len(values) == 0 else "normal"
+        
+        str_var = ctk.StringVar(value=label)
         
         combo_box = ctk.CTkComboBox(
             self,
@@ -24,12 +26,16 @@ class Scene(ctk.CTkFrame):
             font = self.text_font,
             width=300,
             command=command,
-            state = state
+            state = state,
+            variable=str_var
         )
-        combo_box.set(label)
+        
+        combo_box.bind("<FocusIn>", lambda e: str_var.set("") if str_var.get() == label else None)
+        combo_box.bind("<FocusOut>", lambda e: str_var.set(label) if str_var.get() == "" else None)
+        
         combo_box.pack(side=side, pady=pady, padx=padx)
         
-        return combo_box
+        return str_var, combo_box
 
     def create_button(self, label: str, command: Callable, side: Optional[str] = "top", pady: int = 10, padx: int = 5, parent = None):
         parent = self if parent == None else parent
@@ -47,9 +53,11 @@ class Scene(ctk.CTkFrame):
         return button
 
     def create_entry(self, label: str, side: Optional[str] = "top", pady: int = 5, padx: int = 5):
+        str_var = ctk.StringVar(value=label)
+        
         entry = ctk.CTkEntry(
             self,
-            placeholder_text=label,
+            textvariable=str_var,
             border_color=COLORS["blue"],
             placeholder_text_color=COLORS["light_blue"],
             font = self.text_font,
@@ -57,9 +65,10 @@ class Scene(ctk.CTkFrame):
         )
         entry.pack(side=side, pady=pady, padx=padx)
         
-        self.entries[label] = entry
+        entry.bind("<FocusIn>", lambda e: str_var.set("") if str_var.get() == label else None)
+        entry.bind("<FocusOut>", lambda e: str_var.set(label) if str_var.get() == "" else None)
         
-        return entry
+        return str_var
 
     def create_label(self, label: str, side: Optional[str] = "top", pady: int = 5, padx: int = 5):
         title_label = ctk.CTkLabel(

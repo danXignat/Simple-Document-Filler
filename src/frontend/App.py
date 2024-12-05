@@ -3,14 +3,17 @@ import customtkinter as ctk
 from PIL import Image, ImageTk
 
 from config import *
-
 from frontend import *
 from models.SceneType import SceneType
 
 scenes_constr = {
     SceneType.MainMenu : MainMenuScene,
     SceneType.PersonalData : PersonalDataScene,
-    SceneType.TargetPlace : TargetPlaceScene
+    SceneType.TargetPlace : TargetPlaceScene,
+    SceneType.PanelSelection : PanelSelectionScene,
+    SceneType.InvertorSelection : InvertorSelectionScene,
+    SceneType.SmartMeterSelection : SmartMeterSelectionScene,
+    SceneType.Summary : SummaryScene
 }
 
 class App(ctk.CTk):
@@ -29,19 +32,31 @@ class App(ctk.CTk):
         self.scene_container.grid_rowconfigure(0, weight=1)
         self.scene_container.grid_columnconfigure(0, weight=1)
         
+        self.data_container = {}
         self.scenes = {}
         
-        for scene_type, scene_class in scenes_constr.items():
-            scene = scene_class(parent=self.scene_container, controller=self)
+        self.init_scenes()
+    
+        self.switch_scene(SceneType.MainMenu)
+        
+    def init_scenes(self):
+        for scene_type, SceneClass in scenes_constr.items():
+            scene = SceneClass(
+                parent=self.scene_container,
+                controller=self,
+                data_container = self.data_container
+                )
+            
             self.scenes[scene_type] = scene
             
             scene.grid(row=0, column=0, padx = 20, pady = 20, sticky="nsew")
-            
-        
-        self.switch_scene(SceneType.MainMenu)
-    
+
     def switch_scene(self, scene_type: SceneType):
         """Switch to a different scene."""
         scene = self.scenes[scene_type]
+        
+        if isinstance(scene, SummaryScene):
+            scene.update_data()
+        
         scene.tkraise()
 

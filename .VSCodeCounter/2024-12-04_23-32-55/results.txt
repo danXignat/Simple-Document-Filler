@@ -1,0 +1,64 @@
+Date : 2024-12-04 23:32:55
+Directory : e:\Projects\Python\DocumentFiller
+Total : 28 files,  84364 codes, 5 comments, 222 blanks, all 84591 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| JSON     |          4 |     83,691 |          0 |          0 |     83,691 |
+| Python   |         22 |        584 |          5 |        220 |        809 |
+| OpenXml  |          1 |         87 |          0 |          0 |         87 |
+| Markdown |          1 |          2 |          0 |          2 |          4 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                             |         28 |     84,364 |          5 |        222 |     84,591 |
+| . (Files)                                                                     |          1 |          2 |          0 |          2 |          4 |
+| data                                                                          |          5 |     83,778 |          0 |          0 |     83,778 |
+| data\json                                                                     |          4 |     83,691 |          0 |          0 |     83,691 |
+| data\template                                                                 |          1 |         87 |          0 |          0 |         87 |
+| src                                                                           |         22 |        584 |          5 |        220 |        809 |
+| src (Files)                                                                   |          4 |         70 |          4 |         34 |        108 |
+| src\backend                                                                   |          2 |         41 |          0 |         22 |         63 |
+| src\frontend                                                                  |         14 |        463 |          1 |        162 |        626 |
+| src\models                                                                    |          2 |         10 |          0 |          2 |         12 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                      | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\Projects\Python\DocumentFiller\README.md                                   | Markdown |          2 |          0 |          2 |          4 |
+| e:\Projects\Python\DocumentFiller\data\json\invertors.json                    | JSON     |        808 |          0 |          0 |        808 |
+| e:\Projects\Python\DocumentFiller\data\json\panels.json                       | JSON     |        188 |          0 |          0 |        188 |
+| e:\Projects\Python\DocumentFiller\data\json\regions.json                      | JSON     |     82,586 |          0 |          0 |     82,586 |
+| e:\Projects\Python\DocumentFiller\data\json\smartmeter.json                   | JSON     |        109 |          0 |          0 |        109 |
+| e:\Projects\Python\DocumentFiller\data\template\Proces verbal PIF-[Nume].docx | OpenXml  |         87 |          0 |          0 |         87 |
+| e:\Projects\Python\DocumentFiller\src\backend\__init__.py                     | Python   |          0 |          0 |          1 |          1 |
+| e:\Projects\Python\DocumentFiller\src\backend\word.py                         | Python   |         41 |          0 |         21 |         62 |
+| e:\Projects\Python\DocumentFiller\src\config.py                               | Python   |         27 |          0 |         10 |         37 |
+| e:\Projects\Python\DocumentFiller\src\frontend\App.py                         | Python   |         46 |          0 |         17 |         63 |
+| e:\Projects\Python\DocumentFiller\src\frontend\BackNext.py                    | Python   |         22 |          0 |          7 |         29 |
+| e:\Projects\Python\DocumentFiller\src\frontend\DataSummary.py                 | Python   |         47 |          0 |         22 |         69 |
+| e:\Projects\Python\DocumentFiller\src\frontend\InvertorSelectionScene.py      | Python   |         32 |          0 |         12 |         44 |
+| e:\Projects\Python\DocumentFiller\src\frontend\MainScene.py                   | Python   |         15 |          0 |          7 |         22 |
+| e:\Projects\Python\DocumentFiller\src\frontend\PanelIDSFrame.py               | Python   |         40 |          0 |         15 |         55 |
+| e:\Projects\Python\DocumentFiller\src\frontend\PanelSelectionScene.py         | Python   |         28 |          0 |          8 |         36 |
+| e:\Projects\Python\DocumentFiller\src\frontend\PersonalDataScene.py           | Python   |         51 |          0 |         18 |         69 |
+| e:\Projects\Python\DocumentFiller\src\frontend\Scene.py                       | Python   |         70 |          0 |         19 |         89 |
+| e:\Projects\Python\DocumentFiller\src\frontend\SceneManager.py                | Python   |         22 |          1 |          5 |         28 |
+| e:\Projects\Python\DocumentFiller\src\frontend\SmartMeterSelectionScene.py    | Python   |         24 |          0 |          8 |         32 |
+| e:\Projects\Python\DocumentFiller\src\frontend\SummaryScene.py                | Python   |         18 |          0 |          9 |         27 |
+| e:\Projects\Python\DocumentFiller\src\frontend\TargetPlaceScene.py            | Python   |         41 |          0 |         15 |         56 |
+| e:\Projects\Python\DocumentFiller\src\frontend\__init__.py                    | Python   |          7 |          0 |          0 |          7 |
+| e:\Projects\Python\DocumentFiller\src\main.py                                 | Python   |          7 |          0 |          5 |         12 |
+| e:\Projects\Python\DocumentFiller\src\models\SceneType.py                     | Python   |         10 |          0 |          1 |         11 |
+| e:\Projects\Python\DocumentFiller\src\models\__init__.py                      | Python   |          0 |          0 |          1 |          1 |
+| e:\Projects\Python\DocumentFiller\src\test.py                                 | Python   |          3 |          0 |          3 |          6 |
+| e:\Projects\Python\DocumentFiller\src\test2.py                                | Python   |         33 |          4 |         16 |         53 |
+| Total                                                                         |          |     84,364 |          5 |        222 |     84,591 |
++-------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

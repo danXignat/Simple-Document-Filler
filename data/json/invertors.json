@@ -1,0 +1,808 @@
+{
+    "Fronius": {
+        "Fronius Primo": [
+            {
+                "Model": "Fronius Primo 3.0-1",
+                "Eficiență": "97.90%",
+                "Grad de protecție": "NEMA 4X",
+                "Interval de temperatură": "-40°C to +55°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "3000 W",
+                "Frecvență": "60 Hz",
+                "Umiditate maximă": "0-100%",
+                "": "Coeficient PMAX (%/°C)"
+            },
+            {
+                "Model": "Fronius Primo 5.0-1",
+                "Eficiență": "97.90%",
+                "Grad de protecție": "NEMA 4X",
+                "Interval de temperatură": "-40°C to +55°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "60 Hz",
+                "Umiditate maximă": "0-100%",
+                "": "-0.34"
+            },
+            {
+                "Model": "Fronius Primo 6.0-1",
+                "Eficiență": "97.90%",
+                "Grad de protecție": "NEMA 4X",
+                "Interval de temperatură": "-40°C to +55°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "60 Hz",
+                "Umiditate maximă": "0-100%",
+                "": "-0.34"
+            },
+            {
+                "Model": "Fronius Primo 8.2-1",
+                "Eficiență": "97.90%",
+                "Grad de protecție": "NEMA 4X",
+                "Interval de temperatură": "-40°C to +55°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "8200 W",
+                "Frecvență": "60 Hz",
+                "Umiditate maximă": "0-100%",
+                "": "-0.34"
+            },
+            {
+                "Model": "Longi 510 LR5-66HPH-510M",
+                "Eficiență": "510",
+                "Grad de protecție": "21.7",
+                "Interval de temperatură": "42.9",
+                "Garanție": "11.88",
+                "Putere nominală instalată": "50.5",
+                "Frecvență": "12.64",
+                "Umiditate maximă": "12",
+                "": "-0.34"
+            },
+            {
+                "Model": "Longi 515 LR5-66HPH-515M",
+                "Eficiență": "515",
+                "Grad de protecție": "21.9",
+                "Interval de temperatură": "43.1",
+                "Garanție": "11.94",
+                "Putere nominală instalată": "50.7",
+                "Frecvență": "12.7",
+                "Umiditate maximă": "12",
+                "": "-0.34"
+            }
+        ],
+        "Fronius Primo GEN 24 Plus": [
+            {
+                "Model": "Fronius Primo GEN 24 3.0 Plus",
+                "Eficiență": "97.20%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "3000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Primo GEN 24 5.0 Plus",
+                "Eficiență": "97.20%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Primo GEN 24 6.0 Plus",
+                "Eficiență": "97.10%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Fronius Symo GEN 24 Plus": [
+            {
+                "Model": "Fronius Symo GEN 24 10.0 Plus",
+                "Eficiență": "98.20%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "10,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo GEN 24 5.0 Plus",
+                "Eficiență": "98.20%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Fronius Symo": [
+            {
+                "Model": "Fronius Symo 3.0-3M",
+                "Eficiență": "97.20%",
+                "Grad de protecție": "IP 65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "3000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 5.0-3M",
+                "Eficiență": "97.50%",
+                "Grad de protecție": "IP 65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 7.0-3M",
+                "Eficiență": "97.60%",
+                "Grad de protecție": "IP 65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "7000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 8.2-3M",
+                "Eficiență": "97.70%",
+                "Grad de protecție": "IP 65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "8200 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 10.0-3-M",
+                "Eficiență": "97.80%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "10000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 12.0-3-M",
+                "Eficiență": "97.90%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "12500 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 15.0-3-M",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "15000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 17.5-3-M",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "17500 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "Fronius Symo 20.0-3-M",
+                "Eficiență": "98.10%",
+                "Grad de protecție": "IP 66",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "20000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ]
+    },
+    "GoodWe": {
+        "GoodWe ET Series (15K-30K)": [
+            {
+                "Model": "GW15K-ET",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "15,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "48 kg"
+            },
+            {
+                "Model": "GW20K-ET",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "20,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "48 kg"
+            },
+            {
+                "Model": "GW25K-ET",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "25,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "54 kg"
+            },
+            {
+                "Model": "GW29.9K-ET",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "29,900 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "54 kg"
+            }
+        ],
+        "GoodWe ET PLUS+ Series (5K-10K)": [
+            {
+                "Model": "GW5K-ET",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "24 kg"
+            },
+            {
+                "Model": "GW8K-ET",
+                "Eficiență": "98.20%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "8,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "24 kg"
+            },
+            {
+                "Model": "GW10KN-ET",
+                "Eficiență": "98.20%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-35°C to +60°C",
+                "Putere nominală instalată": "10,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "24 kg"
+            }
+        ],
+        "GoodWe EH PLUS+ Series (GW5000N-EH & GW6000N-EH)": [
+            {
+                "Model": "GW5000N-EH",
+                "Eficiență": "97.60%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "17 kg"
+            },
+            {
+                "Model": "GW6000N-EH",
+                "Eficiență": "97.60%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "6,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate": "17 kg"
+            }
+        ]
+    },
+    "Huawei": {
+        "Huawei SUN2000-L1": [
+            {
+                "Model": "SUN2000-3KTL-L1",
+                "Eficiență": "98.30%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "3000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-5KTL-L1",
+                "Eficiență": "98.40%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-6KTL-L1",
+                "Eficiență": "98.40%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Huawei SUN2000-M1": [
+            {
+                "Model": "SUN2000-10KTL-M1",
+                "Eficiență": "98.60%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "10,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-5KTL-M1",
+                "Eficiență": "98.40%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-8KTL-M1",
+                "Eficiență": "98.60%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "8,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Huawei SUN2000-M2": [
+            {
+                "Model": "SUN2000-15KTL-M2",
+                "Eficiență": "98.65%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "15,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-20KTL-M2",
+                "Eficiență": "98.65%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "20,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Huawei SUN2000-M3": [
+            {
+                "Model": "SUN2000-30KTL-M3",
+                "Eficiență": "98.70%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "30,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-40KTL-M3",
+                "Eficiență": "98.70%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "40,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            },
+            {
+                "Model": "SUN2000-50KTL-M3",
+                "Eficiență": "98.50%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "50,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ],
+        "Huawei SUN2000-100KTL-M2-AFCI": [
+            {
+                "Model": "SUN2000-100KTL-M2-AFCI",
+                "Eficiență": "98.50%",
+                "Grad de protecție": "IP66",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Garanție": "N/A",
+                "Putere nominală instalată": "100,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%"
+            }
+        ]
+    },
+    "Sungrow" : {
+        "Sungrow SH Series" : [
+            {
+                "Model": "SH5.0RT",
+                "Eficiență": "98.00%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "27 kg"
+            },
+            {
+                "Model": "SH6.0RT",
+                "Eficiență": "98.20%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "27 kg"
+            },
+            {
+                "Model": "SH8.0RT",
+                "Eficiență": "98.40%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "8000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "27 kg"
+            },
+            {
+                "Model": "SH10.0RT",
+                "Eficiență": "98.40%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "10000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "27 kg"
+            }
+        ],
+        "Sungrow SH Series (RS)" : [
+            {
+                "Model": "SH5.0RS",
+                "Eficiență": "97.70%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "18.5 kg"
+            },
+            {
+                "Model": "SH6.0RS",
+                "Eficiență": "97.70%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-25°C to +60°C",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "18.5 kg"
+            }
+        ]
+    },
+    "Victron Energy" : {
+        "Victron Energy Quattro" : [
+            {
+                "Model": "Quattro 48/5000/70-100/100",
+                "Eficiență": "94.00%",
+                "Grad de protecție": "IP20",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală (W)": "5000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "30"
+            },
+            {
+                "Model": "Quattro 48/8000/110-100/100",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP20",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală (W)": "8000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "45"
+            },
+            {
+                "Model": "Quattro 48/10000/140-100/100",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP20",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală (W)": "10000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "51"
+            },
+            {
+                "Model": "Quattro 48/15000/200-100/100",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP20",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală (W)": "15000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "72"
+            }
+        ],
+        "Victron Energy MultiPlus II" : [
+            {
+                "Model": "MultiPlus II 48/3000/35-32",
+                "Eficiență": "94.00%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "3000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "19"
+            },
+            {
+                "Model": "MultiPlus II 48/5000/70-100",
+                "Eficiență": "95.00%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "5000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "30"
+            },
+            {
+                "Model": "MultiPlus II 48/8000/110-100",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "8000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "49"
+            },
+            {
+                "Model": "MultiPlus II 48/10000/140-100",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "10000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "49"
+            },
+            {
+                "Model": "MultiPlus II 48/15000/200-100",
+                "Eficiență": "95.00%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "15000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "80"
+            }
+        ],
+        "Victron Energy EasySolar-II" : [
+            {
+                "Model": "EasySolar-II 48/3000/35-32 MPPT 250/70GX",
+                "Eficiență": "95.00%",
+                "Grad de protecție": "IP21",
+                "Interval de temperatură": "-20°C to +45°C",
+                "Putere nominală (W)": "3000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "26"
+            },
+            {
+                "Model": "EasySolar-II 24/3000/70-32 MPPT 250/70GX",
+                "Eficiență": "94.00%",
+                "Grad de protecție": "IP21",
+                "Interval de temperatură": "-20°C to +45°C",
+                "Putere nominală (W)": "3000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "26"
+            },
+            {
+                "Model": "EasySolar-II 24/5000/70-50 MPPT 250/70GX",
+                "Eficiență": "96.00%",
+                "Grad de protecție": "IP21",
+                "Interval de temperatură": "-20°C to +45°C",
+                "Putere nominală (W)": "5000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "38.6"
+            }
+        ],
+        "Victron Energy MultiPlus II GX" : [
+            {
+                "Model": "MultiPlus II GX 48/3000/35-32",
+                "Eficiență": "94%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "3000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "20"
+            },
+            {
+                "Model": "MultiPlus II GX 48/5000/70-50",
+                "Eficiență": "95%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "5000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "31"
+            }
+        ],
+        "Victron Energy MultiPlus-II GX 24/3000/70-32" : [
+            {
+                "Model": "MultiPlus-II GX 24/3000/70-32",
+                "Eficiență": "94%",
+                "Grad de protecție": "IP22",
+                "Interval de temperatură": "-40°C to +65°C",
+                "Putere nominală (W)": "3000",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-95%",
+                "Greutate (kg)": "20"
+            }
+        ]
+    },
+    "SolarEdge" : {
+        "Monofazate (SE3000H, SE5000H, SE6000H)" : [
+            {
+                "Model": "SE3000H",
+                "Eficiență": "99.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală instalată": "3000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "9 kg"
+            },
+            {
+                "Model": "SE5000H",
+                "Eficiență": "99.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală instalată": "5000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "10.6 kg"
+            },
+            {
+                "Model": "SE6000H",
+                "Eficiență": "99.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-20°C to +60°C",
+                "Putere nominală instalată": "6000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "10.6 kg"
+            }
+        ],
+        "Trifazate (SE12.5K, SE17K)" : [
+            {
+                "Model": "SE12.5K",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "12,500 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "30.7 kg"
+            },
+            {
+                "Model": "SE17K",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "17,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "30.7 kg"
+            }
+        ],
+        "Trifazate de Putere Mare (SE25K, SE30K)" : [
+            {
+                "Model": "SE25K",
+                "Eficiență": "98.3%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "25,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "32 kg"
+            },
+            {
+                "Model": "SE30K",
+                "Eficiență": "98.3%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "30,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "32 kg"
+            }
+        ],
+        "Trifazate pentru Stocare (SE5K-RWB, SE10K-RWB)" : [
+            {
+                "Model": "SE5K-RWB",
+                "Eficiență": "97.8%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "24.5 kg"
+            },
+            {
+                "Model": "SE10K-RWB",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "10,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "24.5 kg"
+            }
+        ],
+        "SolarEdge Home Wave (SE10K, SE7K, SE5K)" : [
+            {
+                "Model": "SE5K",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "5,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "16.4 kg"
+            },
+            {
+                "Model": "SE7K",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "7,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "16.4 kg"
+            },
+            {
+                "Model": "SE10K",
+                "Eficiență": "98.0%",
+                "Grad de protecție": "IP65",
+                "Interval de temperatură": "-40°C to +60°C",
+                "Putere nominală instalată": "10,000 W",
+                "Frecvență": "50/60 Hz",
+                "Umiditate maximă": "0-100%",
+                "Greutate": "16.4 kg"
+            }
+        ]
+    }
+}
