@@ -1,6 +1,5 @@
-miau = {}
+string = "miau [Nume] bau"
 
+string = string.replace("[Nume]", "caca")
 
-miau.popitem()
-
-print(miau)
+print(string)

@@ -1,0 +1,35 @@
+"filename", "language", "Python", "OpenXml", "JSON", "Markdown", "comment", "blank", "total"
+"e:\Projects\Python\DocumentFiller\README.md", "Markdown", 0, 0, 0, 2, 0, 2, 4
+"e:\Projects\Python\DocumentFiller\data\json\invertors.json", "JSON", 0, 0, 808, 0, 0, 0, 808
+"e:\Projects\Python\DocumentFiller\data\json\panels.json", "JSON", 0, 0, 188, 0, 0, 0, 188
+"e:\Projects\Python\DocumentFiller\data\json\regions.json", "JSON", 0, 0, 82586, 0, 0, 0, 82586
+"e:\Projects\Python\DocumentFiller\data\json\smartmeter.json", "JSON", 0, 0, 109, 0, 0, 0, 109
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal PIF-[Nume].docx", "OpenXml", 0, 57, 0, 0, 0, 0, 57
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal de predare primire [Nume].docx", "OpenXml", 0, 1206, 0, 0, 0, 11, 1217
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal de punere in functiune si probe de functionare injectie in retea [Nume].docx", "OpenXml", 0, 80, 0, 0, 0, 0, 80
+"e:\Projects\Python\DocumentFiller\src\Proces verbal de predare primire Output.docx", "OpenXml", 0, 1186, 0, 0, 0, 10, 1196
+"e:\Projects\Python\DocumentFiller\src\backend\__init__.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"e:\Projects\Python\DocumentFiller\src\backend\word.py", "Python", 41, 0, 0, 0, 0, 21, 62
+"e:\Projects\Python\DocumentFiller\src\config.py", "Python", 32, 0, 0, 0, 0, 11, 43
+"e:\Projects\Python\DocumentFiller\src\frontend\App.py", "Python", 47, 0, 0, 0, 0, 17, 64
+"e:\Projects\Python\DocumentFiller\src\frontend\BackNext.py", "Python", 27, 0, 0, 0, 0, 9, 36
+"e:\Projects\Python\DocumentFiller\src\frontend\DataSummary.py", "Python", 52, 0, 0, 0, 0, 23, 75
+"e:\Projects\Python\DocumentFiller\src\frontend\DocumentsDataScene.py", "Python", 22, 0, 0, 0, 0, 8, 30
+"e:\Projects\Python\DocumentFiller\src\frontend\IDSCount.py", "Python", 13, 0, 0, 0, 0, 6, 19
+"e:\Projects\Python\DocumentFiller\src\frontend\IDSFrame.py", "Python", 58, 0, 0, 0, 0, 21, 79
+"e:\Projects\Python\DocumentFiller\src\frontend\InvertorSelectionScene.py", "Python", 45, 0, 0, 0, 0, 17, 62
+"e:\Projects\Python\DocumentFiller\src\frontend\MainScene.py", "Python", 15, 0, 0, 0, 0, 7, 22
+"e:\Projects\Python\DocumentFiller\src\frontend\PanelSelectionScene.py", "Python", 37, 0, 0, 0, 0, 13, 50
+"e:\Projects\Python\DocumentFiller\src\frontend\PersonalDataScene.py", "Python", 55, 0, 0, 0, 0, 18, 73
+"e:\Projects\Python\DocumentFiller\src\frontend\Scene.py", "Python", 70, 0, 0, 0, 0, 19, 89
+"e:\Projects\Python\DocumentFiller\src\frontend\SceneManager.py", "Python", 22, 0, 0, 0, 1, 5, 28
+"e:\Projects\Python\DocumentFiller\src\frontend\SmartMeterSelectionScene.py", "Python", 36, 0, 0, 0, 0, 12, 48
+"e:\Projects\Python\DocumentFiller\src\frontend\SummaryScene.py", "Python", 19, 0, 0, 0, 0, 8, 27
+"e:\Projects\Python\DocumentFiller\src\frontend\TargetPlaceScene.py", "Python", 44, 0, 0, 0, 0, 15, 59
+"e:\Projects\Python\DocumentFiller\src\frontend\__init__.py", "Python", 8, 0, 0, 0, 0, 0, 8
+"e:\Projects\Python\DocumentFiller\src\main.py", "Python", 7, 0, 0, 0, 0, 5, 12
+"e:\Projects\Python\DocumentFiller\src\models\SceneType.py", "Python", 11, 0, 0, 0, 0, 1, 12
+"e:\Projects\Python\DocumentFiller\src\models\__init__.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"e:\Projects\Python\DocumentFiller\src\test.py", "Python", 33, 0, 0, 0, 7, 10, 50
+"e:\Projects\Python\DocumentFiller\src\test2.py", "Python", 72, 0, 0, 0, 1, 21, 94
+"Total", "-", 766, 2529, 83691, 2, 9, 292, 87289

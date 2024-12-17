@@ -8,12 +8,13 @@ from models.SceneType import SceneType
 
 scenes_constr = {
     SceneType.MainMenu : MainMenuScene,
+    SceneType.DocumentsData: DocumentsDataScene,
     SceneType.PersonalData : PersonalDataScene,
     SceneType.TargetPlace : TargetPlaceScene,
     SceneType.PanelSelection : PanelSelectionScene,
     SceneType.InvertorSelection : InvertorSelectionScene,
     SceneType.SmartMeterSelection : SmartMeterSelectionScene,
-    SceneType.Summary : SummaryScene
+    SceneType.Summary : SummaryScene,
 }
 
 class App(ctk.CTk):
@@ -21,6 +22,7 @@ class App(ctk.CTk):
         super().__init__()
         self.title("")
         self.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}")
+        self.minsize(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.iconbitmap(LOGO_PATH)
         
         self.grid_rowconfigure(0, weight=1)
@@ -37,7 +39,7 @@ class App(ctk.CTk):
         
         self.init_scenes()
     
-        self.switch_scene(SceneType.MainMenu)
+        self.switch_scene(SceneType.Summary)
         
     def init_scenes(self):
         for scene_type, SceneClass in scenes_constr.items():
@@ -52,7 +54,6 @@ class App(ctk.CTk):
             scene.grid(row=0, column=0, padx = 20, pady = 20, sticky="nsew")
 
     def switch_scene(self, scene_type: SceneType):
-        """Switch to a different scene."""
         scene = self.scenes[scene_type]
         
         if isinstance(scene, SummaryScene):

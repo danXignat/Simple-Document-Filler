@@ -1,52 +1,119 @@
-import customtkinter as ctk
+from config import TEMPLATES_PATH
+from docx import Document, table
+from docx.shared import Pt
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 
-# Initialize CustomTkinter
-ctk.set_appearance_mode("System")
-ctk.set_default_color_theme("blue")
+import os
+from icecream import ic
 
-class App(ctk.CTk):
-    def __init__(self):
-        super().__init__()
+column_headers = [
+        "Denumire",
+        "Panou solar",
+        "Invertor",
+        "Smart Meter",
+        "Panou distributie",
+        "Sistem prindere",
+        "Accesorii"
+    ]
+    
+row_labels = [
+        "UM",
+        "Cantitate",
+        "Putere minima a panoului",
+        "Tehnologie panouri",
+        "Rama panou",
+        "Conectare",
+        "Eficienta",
+        "Grad protectie",
+        "Interval de temper de functionare",
+        "Garantie",
+        "Garantie eficienta",
+        "Putere nominala instalata",
+        "MPPT",
+        "Iesire",
+        "Frecventa",
+        "Umiditate max 95%",
+        "Serii"
+    ]
+
+def replace_placeholder_with_table(doc_path, output_path, table_data):
+    doc = Document(doc_path)
+
+    for paragraph in doc.paragraphs:
+        if "[big_table]" in paragraph.text:
+            placeholder_paragraph = paragraph
+            break
+
+    rows, cols = len(table_data), len(table_data[0])
+    table = doc.add_table(rows=rows, cols=cols)
+
+    for j, text in enumerate(column_headers):
+        cell = table.cell(0, j)
+        cell.text = text
+    
+        cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+        run = cell.paragraphs[0].runs[0]
+        run.font.size = Pt(10)
+    
+    for i, text in enumerate(row_labels, start=1):
+        cell = table.cell(i, 0)
+        cell.text = text
+    
+        cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+        run = cell.paragraphs[0].runs[0]
+        run.font.size = Pt(10)
+    
+    multiple_series = [i for i in range(16)]
+    
+    cell = table.cell(17, 1)
+    cell.text = ""
+    
+    for series in multiple_series:
+        paragraph = cell.add_paragraph()
+        run = paragraph.add_run(str(series))
+        run.font.size = Pt(10)
+    
+    # for i, row_data in enumerate(table_data):
+    #     for j, cell_text in enumerate(row_data):
+    #         cell = table.cell(i, j)
+    #         cell.text = str(cell_text)
+
+    #         cell.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    #         run = cell.paragraphs[0].runs[0]
+    #         run.font.size = Pt(10)
+
+    placeholder_paragraph.clear()  # Clear the placeholder text
+    placeholder_paragraph._element.addnext(table._tbl)
+
+    try:
+        os.remove(output_path)  # Deletes the file
+        print(f"File '{output_path}' has been deleted successfully.")
+    except FileNotFoundError:
+        print(f"Error: The file '{output_path}' does not exist.")
+    except PermissionError:
+        print(f"Error: You do not have permission to delete '{output_path}'.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
         
-        self.title("Dynamic Summary Example")
-        self.geometry("500x400")
+    doc.save(output_path)
 
-        # Step 1: Define StringVars to store data
-        self.name_var = ctk.StringVar()
-        self.email_var = ctk.StringVar()
-        self.phone_var = ctk.StringVar()
 
-        # Step 2: Create the form entries
-        self.create_form()
-        
-        # Step 3: Create the summary page
-        self.create_summary()
-
-    def create_form(self):
-        """Create input form with Entry widgets."""
-        name_entry = ctk.CTkEntry(self, placeholder_text="Salut")
-        
-        name_entry.grid(row=0, column=1, padx=10, pady=10)
-
-        email_entry = ctk.CTkEntry(self, textvariable=self.email_var)
-        email_entry.grid(row=1, column=1, padx=10, pady=10)
-
-        phone_entry = ctk.CTkEntry(self, textvariable=self.phone_var)
-        phone_entry.grid(row=2, column=1, padx=10, pady=10)
-
-    def create_summary(self):
-        """Create the dynamic summary page."""
-        ctk.CTkLabel(self, text="Summary:", font=ctk.CTkFont(size=20, weight="bold")).grid(row=3, column=0, pady=20, columnspan=2)
-
-        self.summary_name_label = ctk.CTkLabel(self, textvariable=self.name_var)
-        self.summary_name_label.grid(row=4, column=0, columnspan=2, padx=10, pady=5)
-
-        self.summary_email_label = ctk.CTkLabel(self, textvariable=self.email_var)
-        self.summary_email_label.grid(row=5, column=0, columnspan=2, padx=10, pady=5)
-
-        self.summary_phone_label = ctk.CTkLabel(self, textvariable=self.phone_var)
-        self.summary_phone_label.grid(row=6, column=0, columnspan=2, padx=10, pady=5)
-
+# Example Usage
 if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+    doc_path = TEMPLATES_PATH + "Proces verbal de predare primire [Nume].docx"
+    output_path = "Proces verbal de predare primire Output.docx"
+
+    table = []
+    table.append(column_headers)
+    
+    for row_label in row_labels:
+        row = [row_label]
+        
+        row += ['-' for _ in range(len(column_headers) - 1)]
+        
+        table.append(row)
+    
+    ic(table)
+
+    replace_placeholder_with_table(doc_path, output_path, table)
+

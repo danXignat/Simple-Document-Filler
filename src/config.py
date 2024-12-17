@@ -1,5 +1,5 @@
-WINDOW_HEIGHT = 650
-WINDOW_WIDTH = 450
+WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 550
 
 LOGO_PATH = "../static/logo.ico"
 TEMPLATES_PATH = '../data/template/'
@@ -9,6 +9,7 @@ INVERTORS_PATH = "../data/json/invertors.json"
 PANELS_PATH = "../data/json/panels.json"
 SMART_METER_PATH = "../data/json/smartmeter.json"
 
+BOX_WIDTH = 400
 TITLE_PADY = 30
 COLORS = {
     "green": "#00C48C",  # Green
@@ -18,7 +19,12 @@ COLORS = {
     "light_blue": "#02b4fa",  # Light blue
     "dark_blue" : "#004f6e",
     
-    "label_font": ("Verdana", 22, "bold")
+    "redish" : "#F45463",#a12a35
+    "redish_dark" : "#a12a35",
+    
+    "label_font": ("Verdana", 22, "bold"),
+    "text_font_bold" : ("Verdana", 14, "bold"),
+    "text_font" : ("Verdana", 14)
 }
 
 import json

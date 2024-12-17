@@ -1,0 +1,24 @@
+"filename", "language", "Python", "OpenXml", "comment", "blank", "total"
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal PIF-[Nume].docx", "OpenXml", 0, -30, 0, 0, -30
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal de predare primire [Nume].docx", "OpenXml", 0, 1206, 0, 11, 1217
+"e:\Projects\Python\DocumentFiller\data\template\Proces verbal de punere in functiune si probe de functionare injectie in retea [Nume].docx", "OpenXml", 0, 80, 0, 0, 80
+"e:\Projects\Python\DocumentFiller\src\Proces verbal de predare primire Output.docx", "OpenXml", 0, 1186, 0, 10, 1196
+"e:\Projects\Python\DocumentFiller\src\config.py", "Python", 5, 0, 0, 1, 6
+"e:\Projects\Python\DocumentFiller\src\frontend\App.py", "Python", 1, 0, 0, 0, 1
+"e:\Projects\Python\DocumentFiller\src\frontend\BackNext.py", "Python", 5, 0, 0, 2, 7
+"e:\Projects\Python\DocumentFiller\src\frontend\DataSummary.py", "Python", 5, 0, 0, 1, 6
+"e:\Projects\Python\DocumentFiller\src\frontend\DocumentsDataScene.py", "Python", 22, 0, 0, 8, 30
+"e:\Projects\Python\DocumentFiller\src\frontend\IDSCount.py", "Python", 13, 0, 0, 6, 19
+"e:\Projects\Python\DocumentFiller\src\frontend\IDSFrame.py", "Python", 58, 0, 0, 21, 79
+"e:\Projects\Python\DocumentFiller\src\frontend\InvertorSelectionScene.py", "Python", 13, 0, 0, 5, 18
+"e:\Projects\Python\DocumentFiller\src\frontend\PanelIDSFrame.py", "Python", -40, 0, 0, -15, -55
+"e:\Projects\Python\DocumentFiller\src\frontend\PanelSelectionScene.py", "Python", 9, 0, 0, 5, 14
+"e:\Projects\Python\DocumentFiller\src\frontend\PersonalDataScene.py", "Python", 4, 0, 0, 0, 4
+"e:\Projects\Python\DocumentFiller\src\frontend\SmartMeterSelectionScene.py", "Python", 12, 0, 0, 4, 16
+"e:\Projects\Python\DocumentFiller\src\frontend\SummaryScene.py", "Python", 1, 0, 0, -1, 0
+"e:\Projects\Python\DocumentFiller\src\frontend\TargetPlaceScene.py", "Python", 3, 0, 0, 0, 3
+"e:\Projects\Python\DocumentFiller\src\frontend\__init__.py", "Python", 1, 0, 0, 0, 1
+"e:\Projects\Python\DocumentFiller\src\models\SceneType.py", "Python", 1, 0, 0, 0, 1
+"e:\Projects\Python\DocumentFiller\src\test.py", "Python", 30, 0, 7, 7, 44
+"e:\Projects\Python\DocumentFiller\src\test2.py", "Python", 39, 0, -3, 5, 41
+"Total", "-", 182, 2442, 4, 70, 2698

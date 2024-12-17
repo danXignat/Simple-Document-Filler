@@ -1,4 +1,5 @@
 from .MainScene import MainMenuScene
+from .DocumentsDataScene import DocumentsDataScene
 from .PersonalDataScene import PersonalDataScene
 from .TargetPlaceScene import TargetPlaceScene
 from .PanelSelectionScene import PanelSelectionScene
