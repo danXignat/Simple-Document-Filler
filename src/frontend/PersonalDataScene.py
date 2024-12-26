@@ -3,17 +3,15 @@ from tkinter import messagebox
 import json
 
 from frontend.Scene import Scene
-from config import COLORS, DEFAULT_DATA, TITLE_PADY, judete
 from models.SceneType import SceneType
 from frontend.BackNext import BackNext
-
+import config
 
 class PersonalDataScene(Scene):
     text_entries = {
         "Nume complet"          : "Nume complet",
         "Email"         : "Adresa de email",
         "Telefon"       : "Număr de telefon",
-        "Adresa completa": "Adresa completa",
         "Strada"        : "Strada",
         "Numar strada"  : "Numar strada", 
         "Bloc"          : "Bloc",
@@ -32,14 +30,14 @@ class PersonalDataScene(Scene):
         self.entries["Date personale"] = {}
         self.local_entries = self.entries["Date personale"]
         
-        self.scrollable_frame = ctk.CTkScrollableFrame(self, fg_color=self._fg_color, scrollbar_button_color = COLORS["green"], scrollbar_button_hover_color = COLORS["dark_green"])
+        self.scrollable_frame = ctk.CTkScrollableFrame(self, fg_color=self._fg_color, scrollbar_button_color = config.COLORS["green"], scrollbar_button_hover_color = config.COLORS["dark_green"])
         
-        self.label = self.create_label("Date personale", pady=TITLE_PADY)
+        self.label = self.create_label("Date personale", pady=config.TITLE_PADY)
         
         self.create_form()
         
         self.combo_boxes = {}
-        self.local_entries["Judet"], self.combo_boxes["Judet"] = self.create_combo_box("Judet", list(judete.keys()), command=self.get_judet, parent=self.scrollable_frame)
+        self.local_entries["Judet"], self.combo_boxes["Judet"] = self.create_combo_box("Judet", list(config.judete.keys()), command=self.get_judet, parent=self.scrollable_frame)
         self.local_entries["Localitate"], self.combo_boxes["Localitate"] = self.create_combo_box("Localitate", [], parent=self.scrollable_frame)
         self.local_entries["Sector"] = ctk.StringVar(value = "Sector")
         
@@ -53,10 +51,7 @@ class PersonalDataScene(Scene):
     def go_back(self):
         result = messagebox.askyesno("Confirmare", "Esti sigur? Vei pierde progresul!")
         if result:
-            with open(DEFAULT_DATA, "r") as file:
-                default_data = json.load(file)
-            
-            self.controller.reinitialise(default_data)
+            self.controller.reinitialise()
             self.controller.switch_scene("Meniu principal")
             print("Reset")
         else:
@@ -84,7 +79,7 @@ class PersonalDataScene(Scene):
     def get_localitati(self, judet: str):
         localitati = []
         
-        for localitate in judete[judet]:
+        for localitate in config.judete[judet]:
             localitati.append(localitate["name"])
             
         return localitati

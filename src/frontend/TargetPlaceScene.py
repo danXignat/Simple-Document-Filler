@@ -33,12 +33,9 @@ class TargetPlaceScene(Scene):
         self.prob_dates = [None, None]
         self.prob_calendars = [None, None]
         
+        self.local_entries["Sector"] = ctk.StringVar(value = "Sector")
         for text in self.text_entries:
             self.local_entries[text] = self.create_entry(text)
-        
-        self.local_entries["Judet"], self.combo_boxes["Judet"] = self.create_combo_box("Judet", list(judete.keys()), command=self.get_judet)
-        self.local_entries["Localitate"], self.combo_boxes["Localitate"] = self.create_combo_box("Localitate", [])
-        
         
         dates_frame = ctk.CTkFrame(self, fg_color=self._fg_color)
         
@@ -59,6 +56,9 @@ class TargetPlaceScene(Scene):
         count_panel = IDSCount(self, "Durata probe")
         self.local_entries["Durata probe"] = count_panel.count_var
         count_panel.pack(pady=10)
+        
+        self.local_entries["Judet"], self.combo_boxes["Judet"] = self.create_combo_box("Judet", list(judete.keys()), command=self.get_judet)
+        self.local_entries["Localitate"], self.combo_boxes["Localitate"] = self.create_combo_box("Localitate", [])
         
         self.back_next_buttons = BackNext(self, self.go_back, self.go_next, self._fg_color)
         
@@ -92,10 +92,10 @@ class TargetPlaceScene(Scene):
         
         if choice.lower() == "bucuresti" or choice.lower() == "bucurești":
             self.combo_boxes["Localitate"].set("BUCUREȘTI")
-            if "Sector" not in self.local_entries:
+            if "Sector" not in self.combo_boxes:
                 self.create_sector_entry()
                 
-        elif "Sector" in self.local_entries:
+        elif "Sector" in self.combo_boxes:
             self.combo_boxes["Localitate"].set("Localitate")
             self.combo_boxes["Sector"].destroy()
         

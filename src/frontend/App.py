@@ -2,6 +2,8 @@ from turtle import window_width
 import customtkinter as ctk
 from PIL import Image, ImageTk
 from datetime import datetime
+from typing import Dict
+from icecream import ic
 
 from config import *
 from frontend import *
@@ -25,7 +27,16 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("")
-        self.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}")
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+        
+        top_width = WINDOW_WIDTH  
+        top_height = WINDOW_HEIGHT
+        
+        x = (screen_width - top_width) // 8
+        y = (screen_height - top_height) // 2
+        
+        self.geometry(f"{top_width}x{top_height}+{x}+{y}")
         self.minsize(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.iconbitmap(LOGO_PATH)
         
@@ -46,7 +57,9 @@ class App(ctk.CTk):
         self.scenes = {}
         
         self.init_scenes()
-    
+        
+        self.default_data = self.get_dict()
+        
         self.switch_scene("Meniu principal")
         
     def init_scenes(self):
@@ -72,20 +85,35 @@ class App(ctk.CTk):
                 
         scene.tkraise()
     
-    def reinitiliase_series(self, data):
+    def reinitiliase_series(self):
         scenes_to_visit = {"Date panouri": "Serii panouri", "Date invertor": "Serii invertoare", "Date Smart Meter": "Serii Smart Meters"}
         
         for scene, data_cat in scenes_to_visit.items():
-            while len(data[data_cat]) > len(self.data_container[data_cat]):
+            while len(self.default_data[data_cat]) > len(self.data_container[data_cat]):
                 self.scenes[scene].ids_frame.add_entry()
             
-            while len(data[data_cat]) < len(self.data_container[data_cat]):
+            while len(self.default_data[data_cat]) < len(self.data_container[data_cat]):
                 self.scenes[scene].ids_frame.remove_entry()
+                
+        if "Sector" in self.scenes["Date personale"].combo_boxes:
+            self.scenes["Date personale"].combo_boxes["Sector"].destroy()
+            self.scenes["Date personale"].combo_boxes.pop("Sector")
         
-    def reinitialise(self, data):
-        self.reinitiliase_series(data)
+        if "Sector" in self.scenes["Date implementare"].combo_boxes:
+            self.scenes["Date implementare"].combo_boxes["Sector"].destroy()
+            self.scenes["Date implementare"].combo_boxes.pop("Sector")
         
-        for (label1, category1), (label2, category2) in zip(data.items(), self.data_container.items()):
+    def reinitialise(self):
+        self.reinitiliase_series()
+        
+        for (label1, category1), (label2, category2) in zip(self.default_data.items(), self.data_container.items()):
             for (key1, val1), (key2, val2) in zip(category1.items(), category2.items()):
                 val2.set(val1)
 
+    def get_dict(self) -> Dict:
+        data = {}
+        
+        for label, category in self.data_container.items():
+            data[label] = {key: value.get() for key, value in category.items()}
+
+        return data

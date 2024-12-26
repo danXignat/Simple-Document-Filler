@@ -2,7 +2,7 @@ from ctypes import resize
 from turtle import width
 import customtkinter as ctk
 from typing import Dict
-import icecream 
+from icecream import ic
 
 from config import COLORS
 from models.SceneType import SceneType
@@ -17,7 +17,6 @@ class DataSummary(ctk.CTkScrollableFrame):
         self.series_frames = {"Serii panouri" : None, "Serii invertoare" : None, "Serii Smart Meters" : None}        
         
         self.init_data()
-        
         
     def init_data(self):
         for category, subcategories in self.data.items():

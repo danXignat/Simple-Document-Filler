@@ -1,4 +1,11 @@
-from backend import parse
+from tkinter import ttk, messagebox
 
-def submit(data, path):
-    parse.parse_documents(data, path)
+from backend import parse
+from frontend.ExportWindow import ExportWindow
+
+def submit(data, path, export_window):
+    parse.parse_documents(data, path, export_window)
+    
+    export_window.destroy()
+    messagebox.showinfo("Info", "Documentele au fost procesate")
+    

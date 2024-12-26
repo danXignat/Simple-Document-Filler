@@ -9,9 +9,7 @@ from config import TEMPLATES_PATH, OUTPUT_PATH
 
 def parse_doc(input_path: str, output_path: str, data: Tuple[Dict, Dict]):
     fields, series = data
-    
-    output_path =  output_path.replace("[Nume complet]", fields["[Nume complet]"])
-    
+        
     doc = Document(input_path)
     
     for paragraph in doc.paragraphs:
@@ -30,16 +28,19 @@ def parse_doc(input_path: str, output_path: str, data: Tuple[Dict, Dict]):
     
     doc.save(output_path)
     
-def parse_documents(data: Tuple[Dict, Dict], path: str):
+def parse_documents(data: Tuple[Dict, Dict], path: str, export_window):
     input_paths = [TEMPLATES_PATH + filename for filename in os.listdir(TEMPLATES_PATH)]
     output_paths = [path + filename for filename in os.listdir(TEMPLATES_PATH)]
     
     # shutil.rmtree(OUTPUT_PATH)
     # os.mkdir(OUTPUT_PATH)
     
-    for input_path, output_path in zip(input_paths, output_paths):
+    for index, (input_path, output_path) in enumerate( zip(input_paths, output_paths), start=1 ):
         if input_path[-1] != '#':
+            output_path = output_path.replace("[Nume complet]", data[0]["[Nume complet]"])
+            
             parse_doc(input_path, output_path, data)
-        
+            
+            export_window.update(index, len(input_paths), os.path.basename(output_path))
         
         
