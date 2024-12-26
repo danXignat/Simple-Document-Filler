@@ -26,8 +26,8 @@ class TargetPlaceScene(Scene):
         
         self.create_label("Loc implementare", pady=TITLE_PADY)
         
-        self.entries[SceneType.TargetPlace] = {}
-        self.local_entries = self.entries[SceneType.TargetPlace]
+        self.entries["Date implementare"] = {}
+        self.local_entries = self.entries["Date implementare"]
         self.combo_boxes = {}
         
         self.prob_dates = [None, None]
@@ -39,17 +39,22 @@ class TargetPlaceScene(Scene):
         self.local_entries["Judet"], self.combo_boxes["Judet"] = self.create_combo_box("Judet", list(judete.keys()), command=self.get_judet)
         self.local_entries["Localitate"], self.combo_boxes["Localitate"] = self.create_combo_box("Localitate", [])
         
-        calendar = DateEntry(self, "Data incepere probe", fg_color=self._fg_color)
+        
+        dates_frame = ctk.CTkFrame(self, fg_color=self._fg_color)
+        
+        calendar = DateEntry(dates_frame, "Data incepere probe", row=0,  fg_color=self._fg_color)
         self.prob_calendars[0] = calendar
         calendar.update_signal.connect(self.handle_date_update)
         self.local_entries["Data incepere probe"] = calendar.string_var
         # calendar.pack(fill = 'x', pady=10, anchor = 'center')
         
-        calendar = DateEntry(self, "Data terminare probe", fg_color=self._fg_color)
+        calendar = DateEntry(dates_frame, "Data terminare probe", row=1, fg_color=self._fg_color)
         self.prob_calendars[1] = calendar
         calendar.update_signal.connect(self.handle_date_update)
         self.local_entries["Data terminare probe"] = calendar.string_var
         # calendar.pack(fill = 'x', pady=10, anchor = 'center')
+        
+        dates_frame.pack(pady = 10)
         
         count_panel = IDSCount(self, "Durata probe")
         self.local_entries["Durata probe"] = count_panel.count_var
@@ -73,10 +78,10 @@ class TargetPlaceScene(Scene):
             )
         
     def go_back(self):
-        self.controller.switch_scene(SceneType.PersonalData)
+        self.controller.switch_scene("Date personale")
     
     def go_next(self):
-        self.controller.switch_scene(SceneType.PanelSelection)
+        self.controller.switch_scene("Date panouri")
         
     def get_judet(self, choice):
         self.combo_boxes["Localitate"].configure(

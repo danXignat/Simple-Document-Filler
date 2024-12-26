@@ -13,8 +13,8 @@ class InvertorSelectionScene(Scene):
         
         self.create_label("Selecteaza invertor", pady=TITLE_PADY)
         
-        self.entries[SceneType.InvertorSelection] = {}
-        self.local_entries = self.entries[SceneType.InvertorSelection]
+        self.entries["Date invertor"] = {}
+        self.local_entries = self.entries["Date invertor"]
         
         self.combo_boxes = {}
         self.local_entries["Firma"], self.combo_boxes["Firma"] = self.create_combo_box("Firma", list(invertors.keys()), command=self.firm_choice)
@@ -39,10 +39,10 @@ class InvertorSelectionScene(Scene):
         self.back_next_buttons = BackNext(self, self.go_back, self.go_next, self._fg_color)
     
     def go_back(self):
-        self.controller.switch_scene(SceneType.PanelSelection)
+        self.controller.switch_scene("Date panouri")
     
     def go_next(self):
-        self.controller.switch_scene(SceneType.SmartMeterSelection)
+        self.controller.switch_scene("Date Smart Meter")
     
     def firm_choice(self, choice):
         self.combo_boxes["Gama"].configure(

@@ -6,3 +6,4 @@ from .PanelSelectionScene import PanelSelectionScene
 from .InvertorSelectionScene import InvertorSelectionScene
 from .SmartMeterSelectionScene import SmartMeterSelectionScene
 from .SummaryScene import SummaryScene
+from .ViewClientsScene import ViewClientsScene

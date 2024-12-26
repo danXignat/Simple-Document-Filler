@@ -14,8 +14,8 @@ class PanelSelectionScene(Scene):
         super().__init__(parent, controller, data_container)
         
         self.create_label("Selecteaza panouri", pady=TITLE_PADY)
-        self.entries[SceneType.PanelSelection] = {}
-        self.local_entries = self.entries[SceneType.PanelSelection]
+        self.entries["Date panouri"] = {}
+        self.local_entries = self.entries["Date panouri"]
         
         self.combo_boxes = {}
         self.local_entries["Firma"], self.combo_boxes["Firma"] = self.create_combo_box("Firma", list(panels.keys()), command=self.firm_choice)
@@ -38,10 +38,10 @@ class PanelSelectionScene(Scene):
         self.back_next_buttons = BackNext(self, self.go_back, self.go_next, self._fg_color)
         
     def go_back(self):
-        self.controller.switch_scene(SceneType.TargetPlace)
+        self.controller.switch_scene("Date implementare")
     
     def go_next(self):
-        self.controller.switch_scene(SceneType.InvertorSelection)
+        self.controller.switch_scene("Date invertor")
     
     def firm_choice(self, choice):
         self.combo_boxes["Model"].configure(

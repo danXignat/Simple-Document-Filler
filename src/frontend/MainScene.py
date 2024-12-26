@@ -16,7 +16,7 @@ class MainMenuScene(Scene):
         self.create_button("Vezi clienti", self.view_clients_scene, pady = 20, parent = self.buttons_frame)
 
     def new_client_scene(self):
-        self.controller.switch_scene(SceneType.DocumentsData)
+        self.controller.switch_scene("Date personale")
 
     def view_clients_scene(self):
-        print("View action clicked!")
+        self.controller.switch_scene("Clienti")

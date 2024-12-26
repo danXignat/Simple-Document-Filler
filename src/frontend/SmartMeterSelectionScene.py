@@ -12,8 +12,8 @@ class SmartMeterSelectionScene(Scene):
         
         self.create_label("Selecteaza Smart Meter", pady=TITLE_PADY)
         
-        self.entries[SceneType.SmartMeterSelection] = {}
-        self.local_entries = self.entries[SceneType.SmartMeterSelection]
+        self.entries["Date Smart Meter"] = {}
+        self.local_entries = self.entries["Date Smart Meter"]
         
         self.combo_boxes = {}
         self.local_entries["Firma"], self.combo_boxes["Firma"] = self.create_combo_box("Firma", list(smart_meters.keys()), command=self.firm_choice)
@@ -35,10 +35,10 @@ class SmartMeterSelectionScene(Scene):
         self.back_next_buttons = BackNext(self, self.go_back, self.go_next, self._fg_color)
         
     def go_back(self):
-        self.controller.switch_scene(SceneType.InvertorSelection)
+        self.controller.switch_scene("Date invertor")
     
     def go_next(self):
-        self.controller.switch_scene(SceneType.Summary)
+        self.controller.switch_scene("Rezumat")
     
     def firm_choice(self, choice):
         self.combo_boxes["Model"].configure(

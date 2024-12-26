@@ -1,16 +1,19 @@
 import customtkinter as ctk
+from tkinter import messagebox
+import json
+
 from frontend.Scene import Scene
-from config import COLORS, TITLE_PADY, judete
+from config import COLORS, DEFAULT_DATA, TITLE_PADY, judete
 from models.SceneType import SceneType
 from frontend.BackNext import BackNext
 
 
 class PersonalDataScene(Scene):
     text_entries = {
-        "Nume"          : "Nume complet",
+        "Nume complet"          : "Nume complet",
         "Email"         : "Adresa de email",
         "Telefon"       : "Număr de telefon",
-        "Adresa"        : "Adresa completă",
+        "Adresa completa": "Adresa completa",
         "Strada"        : "Strada",
         "Numar strada"  : "Numar strada", 
         "Bloc"          : "Bloc",
@@ -26,8 +29,8 @@ class PersonalDataScene(Scene):
     
     def __init__(self, parent, controller, data_container):
         super().__init__(parent, controller, data_container)
-        self.entries[SceneType.PersonalData] = {}
-        self.local_entries = self.entries[SceneType.PersonalData]
+        self.entries["Date personale"] = {}
+        self.local_entries = self.entries["Date personale"]
         
         self.scrollable_frame = ctk.CTkScrollableFrame(self, fg_color=self._fg_color, scrollbar_button_color = COLORS["green"], scrollbar_button_hover_color = COLORS["dark_green"])
         
@@ -48,10 +51,19 @@ class PersonalDataScene(Scene):
             self.local_entries[field] = self.create_entry(placeholder, parent=self.scrollable_frame)
         
     def go_back(self):
-        self.controller.switch_scene(SceneType.DocumentsData)
+        result = messagebox.askyesno("Confirmare", "Esti sigur? Vei pierde progresul!")
+        if result:
+            with open(DEFAULT_DATA, "r") as file:
+                default_data = json.load(file)
+            
+            self.controller.reinitialise(default_data)
+            self.controller.switch_scene("Meniu principal")
+            print("Reset")
+        else:
+            print("Action canceled!")
     
     def go_next(self):
-        self.controller.switch_scene(SceneType.TargetPlace)
+        self.controller.switch_scene("Date implementare")
    
     def get_judet(self, choice):
         self.combo_boxes["Localitate"].configure(

@@ -9,4 +9,5 @@ class SceneType(Enum):
     PanelSelection: str = "Date panouri"
     InvertorSelection: str = "Date invertor"
     SmartMeterSelection: str = "Date Smart Meter"
-    Summary: str = "Rezumat"
+    Summary: str = "Rezumat",
+    ViewClients: str = "Clienti"

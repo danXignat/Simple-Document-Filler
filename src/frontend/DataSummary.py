@@ -44,16 +44,30 @@ class DataSummary(ctk.CTkScrollableFrame):
         subcategory_title = ctk.CTkLabel(parent_frame, text = subcategory + ':', font=COLORS["text_font"])
         subcategory_title.grid(row = row, column = 0, padx=10, pady=3, sticky="w")
         
-        subcategory_value = ctk.CTkLabel(parent_frame, textvariable = value, font=COLORS["text_font_bold"])
-        subcategory_value.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
+        if isinstance(value, int):
+            value = str(value)
+        
+        if isinstance(value, str):
+            subcategory_value = ctk.CTkLabel(parent_frame, text = value, font=COLORS["text_font_bold"])
+            subcategory_value.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
+        else:
+            subcategory_value = ctk.CTkLabel(parent_frame, textvariable = value, font=COLORS["text_font_bold"])
+            subcategory_value.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
     
     
     def create_series(self, frame, series_count, series_var, row):
         count = ctk.CTkLabel(frame, text = series_count, font=COLORS["text_font"])
         count.grid(row = row, column = 0, padx=10, pady=3, sticky="w")
-            
-        series = ctk.CTkLabel(frame, textvariable = series_var, font=COLORS["text_font_bold"])
-        series.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
+        
+        if isinstance(series_var, int):
+            series_var = str(series_var)
+        
+        if isinstance(series_var, str):
+            series = ctk.CTkLabel(frame, text = series_var, font=COLORS["text_font_bold"])
+            series.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
+        else:
+            series = ctk.CTkLabel(frame, textvariable = series_var, font=COLORS["text_font_bold"])
+            series.grid(row = row, column = 1, padx=10, pady=3, sticky="w")
             
         return count, series
     

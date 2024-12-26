@@ -1,13 +1,17 @@
 WINDOW_HEIGHT = 800
 WINDOW_WIDTH = 550
 
+LOGO_PNG_PATH = "../static/logo_png.png"
 LOGO_PATH = "../static/logo.ico"
 TEMPLATES_PATH = '../data/template/'
 OUTPUT_PATH = "../data/output/"
+
 REGIONS_PATH = "../data/json/regions.json"
 INVERTORS_PATH = "../data/json/invertors.json"
 PANELS_PATH = "../data/json/panels.json"
 SMART_METER_PATH = "../data/json/smartmeter.json"
+CLIENTS_PATH = "../data/json/clients.json"
+DEFAULT_DATA = "../data/json/default_data.json"
 
 BOX_WIDTH = 400
 TITLE_PADY = 30

@@ -1,4 +1,4 @@
 from backend import parse
 
-def submit(data):
-    parse.parse_documents(data)
+def submit(data, path):
+    parse.parse_documents(data, path)
