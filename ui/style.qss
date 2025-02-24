@@ -1,0 +1,153 @@
+/* Main Application Style */
+QMainWindow {
+    background-color: #ffffff;
+}
+/* Navigation/Header Styles */
+QMenuBar {
+    background-color: #ffffff;
+    spacing: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+QMenuBar::item {
+    color: #333333;
+    padding: 10px 15px;
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+}
+QMenuBar::item:selected {
+    color: #00bf8f;
+}
+/* Button Styles */
+
+QScrollArea {
+        background-color: white;
+    }
+    
+QScrollArea > QWidget > QWidget {
+    background-color: white;
+}
+
+QPushButton {
+    background-color: #00bf8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    min-width: 100px;
+}
+QPushButton:hover {
+    background-color: #00a77c;
+}
+QPushButton:pressed {
+    background-color: #008f69;
+}
+/* Secondary Button */
+QPushButton.secondary {
+    background-color: white;
+    color: #00bf8f;
+    border: 2px solid #00bf8f;
+}
+QPushButton.secondary:hover {
+    background-color: #f0f0f0;
+}
+/* Form Styles */
+QLineEdit, QTextEdit, QComboBox {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: white;
+    color: #333333; /* Added text color */
+    selection-background-color: #00bf8f;
+}
+QLineEdit:focus, QTextEdit:focus, QComboBox:focus {
+    border: 2px solid #00bf8f;
+}
+/* Ensure text is visible in combo box dropdown too */
+QComboBox QAbstractItemView {
+    color: #333333;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+}
+/* Labels */
+QLabel {
+    color: #333333;
+    font-family: "Arial", sans-serif;
+}
+QLabel.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #202020;
+    margin-bottom: 15px;
+}
+/* Card/Container Styles */
+QFrame.card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+/* Statistics/Numbers Display */
+QLabel.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #202020;
+}
+QLabel.stat-label {
+    font-size: 14px;
+    color: #666666;
+}
+/* List/Table Styles */
+QTableView {
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    gridline-color: #f0f0f0;
+    color: #333333; /* Added text color for table entries */
+}
+QTableView::item {
+    padding: 8px;
+}
+QHeaderView::section {
+    background-color: #f8f8f8;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: bold;
+    color: #333333; /* Added text color for headers */
+}
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f0f0f0;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background-color: #c0c0c0;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #a0a0a0;
+}
+/* Custom Classes */
+.green-text {
+    color: #00bf8f;
+}
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #202020;
+    margin: 20px 0;
+}
+/* Status Indicators */
+QLabel.status-success {
+    color: #00bf8f;
+}
+QLabel.status-warning {
+    color: #ffa500;
+}
+QLabel.status-error {
+    color: #ff4444;
+}

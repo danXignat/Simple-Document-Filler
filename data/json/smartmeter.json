@@ -1,0 +1,109 @@
+{
+    "Victron" : [
+        {
+            "Smart Meter": "ET112 Smart Meter",
+            "Eficienta": "-",
+            "Grad Protectie": "IP20",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "5 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95%"
+        },
+        {
+            "Smart Meter": "ET340 Smart Meter",
+            "Eficienta": "-",
+            "Grad Protectie": "IP20",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "5 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95%"
+        },
+        {
+            "Smart Meter": "EM540 Smart Meter",
+            "Eficienta": "-",
+            "Grad Protectie": "IP20",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "5 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95%"
+        },
+        {
+            "Smart Meter": "ABB B21 Smart Meter",
+            "Eficienta": "-",
+            "Grad Protectie": "IP20",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "2 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95%"
+        },
+        {
+            "Smart Meter": "ABB B23/24 Smart Meter",
+            "Eficienta": "-",
+            "Grad Protectie": "IP20",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "2 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95%"
+        }
+    ],
+    "MTR-240-1PC1-DW-MW" : [
+        {
+            "Smart Meter": "MTR-240-1PC1-DW-MW",
+            "Eficienta": "1% (active energy accuracy)",
+            "Grad Protectie": "IP51",
+            "Interval Functionare": "-40°C to +70°C",
+            "Garantie": "5 ani",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "95% (30 days/year)"
+        }
+    ],
+    "Huawei" : [
+        {
+            "Smart Meter": "DDSU666-H",
+            "Eficienta": "Class 1 accuracy",
+            "Grad Protectie": "Not specified",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "Not specified",
+            "Frecventa": "±0.01 Hz",
+            "Umiditate Maxima": "95% (non-condensing)"
+        },
+        {
+            "Smart Meter": "DTSU666-H 250A/50mA",
+            "Eficienta": "Class 1 accuracy",
+            "Grad Protectie": "Not specified",
+            "Interval Functionare": "-25°C to +60°C",
+            "Garantie": "Not specified",
+            "Frecventa": "±0.01 Hz",
+            "Umiditate Maxima": "95% (non-condensing)"
+        }
+    ],
+    "Fronius" : [
+        {
+            "Smart Meter": "Fronius TS 100A-1",
+            "Eficienta": "Class 1",
+            "Grad Protectie": "IP20 (front), IP30 (terminals)",
+            "Interval Functionare": "-25°C to +55°C",
+            "Garantie": "Not specified",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "Not specified"
+        },
+        {
+            "Smart Meter": "Fronius TS 65A-3",
+            "Eficienta": "Class 1",
+            "Grad Protectie": "IP20 (front), IP30 (terminals)",
+            "Interval Functionare": "-25°C to +65°C",
+            "Garantie": "Not specified",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "Not specified"
+        },
+        {
+            "Smart Meter": "Fronius TS 5kA-3",
+            "Eficienta": "Class 0.5",
+            "Grad Protectie": "IP40",
+            "Interval Functionare": "-40°C to +80°C",
+            "Garantie": "Not specified",
+            "Frecventa": "45-65 Hz",
+            "Umiditate Maxima": "Not specified"
+        }
+    ]
+}
