@@ -1,0 +1,69 @@
+{
+    "Date documente": {
+        "Data intocmire": "24-12-2024"
+    },
+    "Date personale": {
+        "Nume complet": "Nume complet",
+        "Email": "Adresa de email",
+        "Telefon": "Num\u0103r de telefon",
+        "Adresa completa": "Adresa completa",
+        "Strada": "Strada",
+        "Numar strada": "Numar strada",
+        "Bloc": "Bloc",
+        "Scara": "Scara",
+        "Etaj": "Etaj",
+        "Apartament": "Apartament",
+        "CNP": "CNP",
+        "Seria CI": "Seria CI",
+        "Numar CI": "Numar CI",
+        "Loc eliberare CI": "Loc eliberare CI",
+        "Data eliberare CI": "Data eliberare CI",
+        "Judet": "Judet",
+        "Localitate": "Localitate",
+        "Sector": "Sector"
+    },
+    "Date implementare": {
+        "Strada": "Strada",
+        "Numar strada": "Numar strada",
+        "Numarul de Carte Funciara": "Numarul de Carte Funciara",
+        "Numar topografic al imobilului": "Numar topografic al imobilului",
+        "Numar cadastral": "Numar cadastral",
+        "Suprafata imobilului": "Suprafata imobilului",
+        "Cod unic de identificare POD": "Cod unic de identificare POD",
+        "Numar contract vanzare cumparare": "Numar contract vanzare cumparare",
+        "Persoana emitatoare": "Persoana emitatoare",
+        "Judet": "Judet",
+        "Localitate": "Localitate",
+        "Data incepere probe": "Data incepere probe",
+        "Data terminare probe": "Data terminare probe",
+        "Durata probe": 0
+    },
+    "Date panouri": {
+        "Firma": "Firma",
+        "Model": "Model",
+        "Dispunere panouri": "Dispunere panouri",
+        "Numar panouri": 1
+    },
+    "Serii panouri": {
+        "Serie 1": "Serie 1"
+    },
+    "Date invertor": {
+        "Firma": "Firma",
+        "Gama": "Gama",
+        "Model": "Model",
+        "ID data logger": "ID data logger",
+        "Parola invertor": "Parola invertor",
+        "Numar invertoare": 1
+    },
+    "Serii invertoare": {
+        "Serie 1": "Serie 1"
+    },
+    "Date Smart Meter": {
+        "Firma": "Firma",
+        "Model": "Model",
+        "Numar Smart Meters": 1
+    },
+    "Serii Smart Meters": {
+        "Serie 1": "Serie 1"
+    }
+}
