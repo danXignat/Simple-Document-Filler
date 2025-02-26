@@ -29,31 +29,36 @@ class MainMenuScene(QWidget):
             self.buttons[button_text] = btn
             
 class PersonalDataScene(FormScene):
-    entry_labels = {
-        "Nume complet",
-        "CNP"         ,
-        "Seria CI"    ,
-        "Numar CI"    ,
-        "Loc eliberare CI" ,
-        "Data eliberare CI",
-        "Email"            ,
-        "Telefon"          ,
-        "Strada"           ,
-        "Numar strada"     , 
-        "Bloc"             ,
-        "Cod postal"       ,
-        "Scara"            , 
-        "Etaj"             ,
-        "Apartament"       ,
-        }
+    entry_datas = [
+        ("Nume complet"     , "entry"),
+        ("CNP"              , "entry"),
+        ("Seria CI"         , "entry"),
+        ("Numar CI"         , "entry"),
+        ("Loc eliberare CI" , "entry"),
+        ("Data eliberare CI", "entry"),
+        ("Email"            , "entry"),
+        ("Telefon"          , "entry"),
+        (None               , "place"),
+        ("Strada"           , "entry"),
+        ("Numar strada"     , "entry"),
+        ("Bloc"             , "entry"),
+        ("Cod postal"       , "entry"),
+        ("Scara"            , "entry"),
+        ("Etaj"             , "entry"),
+        ("Apartament"       , "entry"),
+    ]
         
     def setup_ui(self):
         self.set_title("Date personale")
         
-        for label_text in self.entry_labels:
-            self.create_entry(label_text)
-            
-        self.create_judet_combo()
+        for label, entry_type in self.entry_datas:
+            match entry_type:
+                case "entry":
+                    self.create_entry(label)
+                    
+                case "place":
+                    self.create_judet_combo()
+                    
 
 class TargetPlaceScene(FormScene):
     def setup_ui(self):

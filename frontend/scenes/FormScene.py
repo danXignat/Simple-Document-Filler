@@ -7,18 +7,20 @@ from abc import ABCMeta, ABC, abstractmethod
 from config import judete
 
 class FormScene(widg.QWidget):
+    entry_datas = []
+    
     def __init__(self, progres_increment: int, parent=None):
         super().__init__(parent)
         self.progres_increment = progres_increment
         self.entry_counter = 0
-        self.entries : dict[str, widg.QLineEdit]    = {}
+        self.entries    : dict[str, widg.QLineEdit] = {}
         self.combo_boxes: dict[str, widg.QComboBox] = {}
         
         self.main_layout = widg.QVBoxLayout(self)
         self.main_layout.setContentsMargins(10, 10, 10, 10)
         self.main_layout.setSpacing(10)
        
-        self.title = widg.QLabel("Place holder")
+        self.title = widg.QLabel("Placeholder")
         self.main_layout.addWidget(self.title)
        
         # Create a scroll area
@@ -75,38 +77,34 @@ class FormScene(widg.QWidget):
         self.title.setText(title)
             
     def create_entry(self, label: str):
+        entry = widg.QLineEdit()
+        entry.setPlaceholderText("-")
+        
+        self.entries[label] = entry
+        
         self.form_layout.addWidget(widg.QLabel(label), self.entry_counter, 0)
-        self.form_layout.addWidget(widg.QLineEdit(), self.entry_counter, 1)
+        self.form_layout.addWidget(entry, self.entry_counter, 1)
         self.entry_counter+=1
         
     def create_combo_box(self, label: str, items: list):
         combo_box = widg.QComboBox()
+        combo_box.setPlaceholderText("-")
         combo_box.addItems(items)
+        
+        self.combo_boxes[label] = combo_box
         
         self.form_layout.addWidget(widg.QLabel(label), self.entry_counter, 0)
         self.form_layout.addWidget(combo_box, self.entry_counter, 1)
         self.entry_counter+=1
     
     def create_judet_combo(self):
-        judet_combo_box = widg.QComboBox()
-        localitate_combo_box = widg.QComboBox()
+        self.create_combo_box("Judete", judete.keys())
+        self.create_combo_box("Localitate", [])
         
-        judet_combo_box.addItems(judete)
-        
-        judet_combo_box.currentIndexChanged.connect(self.update_localitate)
-        
-        self.form_layout.addWidget(widg.QLabel("Judet"), self.entry_counter, 0)
-        self.form_layout.addWidget(judet_combo_box, self.entry_counter, 1)
-        self.combo_boxes["Judet"] = judet_combo_box
-        
-        self.form_layout.addWidget(widg.QLabel("Localitate"), self.entry_counter + 1, 0)
-        self.form_layout.addWidget(localitate_combo_box, self.entry_counter + 1, 1)
-        self.combo_boxes["Localitate"] = localitate_combo_box
-        
-        self.entry_counter += 2
+        self.combo_boxes["Judete"].currentIndexChanged.connect(self.update_localitate)
         
     def update_localitate(self):
-        selected_judet = self.combo_boxes["Judet"].currentText()
+        selected_judet = self.combo_boxes["Judete"].currentText()
         
         localitati = [localitate["name"] for localitate in judete[selected_judet]]
         
