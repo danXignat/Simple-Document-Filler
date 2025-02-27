@@ -53,12 +53,12 @@ import json
 with open(REGIONS_PATH, 'r') as file:
     judete = json.load(file)
     
-with open(INVERTORS_PATH, 'r') as file:
+with open(INVERTORS_PATH, 'r', encoding="utf-8") as file:
     invertors = json.load(file)
     
-with open(PANELS_PATH, 'r') as file:
+with open(PANELS_PATH, 'r', encoding="utf-8") as file:
     panels = json.load(file)
     
-with open(SMART_METER_PATH, 'r') as file:
+with open(SMART_METER_PATH, 'r', encoding="utf-8") as file:
     smart_meters = json.load(file)
     
